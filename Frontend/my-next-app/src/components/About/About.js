@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import styles from "./About.module.scss";
 import Image from "next/image";
@@ -9,39 +9,28 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 
 const About = () => {
+    const [windowWidth, setWindowWidth] = useState(0);
+
     useEffect(() => {
         if (typeof window !== "undefined") {
-            ScrollReveal().reveal(".creatrice", {
-                delay: 200,
-                distance: "200px",
-                origin: "right",
-                duration: 1000,
-                easing: "ease-in-out",
-                reset: false,
-            });
-            ScrollReveal().reveal(".atelier1", {
-                delay: 800,
-                distance: "200px",
-                origin: "right",
-                duration: 1000,
-                easing: "ease-in-out",
-                reset: false,
-            });
-            ScrollReveal().reveal(".atelier2", {
-                delay: 1500,
-                distance: "200px",
-                origin: "right",
-                duration: 1000,
-                easing: "ease-in-out",
-                reset: false,
-            });
-            ScrollReveal().reveal(".atelier3", {
-                delay: 2200,
-                distance: "200px",
-                origin: "right",
-                duration: 1000,
-                easing: "ease-in-out",
-                reset: false,
+            console.log(window.innerWidth);
+
+            const elements = [
+                { className: ".creatrice", delay: 200 },
+                { className: ".atelier1", delay: 800 },
+                { className: ".atelier2", delay: 1500 },
+                { className: ".atelier3", delay: 2200 },
+            ];
+
+            elements.forEach(({ className, delay }) => {
+                ScrollReveal().reveal(className, {
+                    delay,
+                    distance: "200px",
+                    origin: "right",
+                    duration: 1000,
+                    easing: "ease-in-out",
+                    reset: false,
+                });
             });
         }
     }, []);

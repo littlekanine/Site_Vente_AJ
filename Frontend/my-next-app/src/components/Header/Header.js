@@ -8,12 +8,14 @@ const Header = () => {
     return (
         <header className={styles.headerGlobal}>
             <div className={styles.header}>
-                <h1>L'Atelier</h1>
+                <Link href="/">
+                    <h1>L'Atelier</h1>
+                </Link>
                 <div className={styles.navigation}>
                     <Link href="/">Acceuil</Link>
                     <Link href="/">A Propos</Link>
                     <Link href="/Boutique">Boutique</Link>
-                    <Link href="/">
+                    <Link href="/Login">
                         <FontAwesomeIcon icon={faCat} />
                     </Link>
                 </div>
