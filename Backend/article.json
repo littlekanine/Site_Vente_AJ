@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "Boucle_1",
+        "description": "description",
+        "type": "Boucle d'oreille",
+        "price": "16"
+    },
+    {
+        "id": 2,
+        "name": "Boucle_1",
+        "description": "description",
+        "type": "Boucle d'oreille",
+        "price": "16"
+    },
+    {
+        "id": 3,
+        "name": "Boucle_1",
+        "description": "description",
+        "type": "Boucle d'oreille",
+        "price": "16"
+    },
+    {
+        "id": 4,
+        "name": "Boucle_1",
+        "description": "description",
+        "type": "Boucle d'oreille",
+        "price": "16"
+    },
+    {
+        "id": 5,
+        "name": "Boucle_1",
+        "description": "description",
+        "type": "Boucle d'oreille",
+        "price": "16"
+    },
+    {
+        "id": 6,
+        "name": "Boucle_1",
+        "description": "description",
+        "type": "Boucle d'oreille",
+        "price": "16"
+    }
+]
