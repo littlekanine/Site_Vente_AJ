@@ -1,0 +1,45 @@
+@import "variables";
+
+.headerGlobal {
+    display: flex;
+    height: 50px;
+    width: 100%;
+    background-color: $blackColor;
+    justify-content: center;
+    position: fixed;
+    z-index: 999;
+    .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        color: white;
+        h1 {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin-left: 25px;
+            font-family: var(--font-montserrat);
+            font-weight: bold;
+        }
+        .navigation {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            margin-right: 25px;
+            a {
+                display: flex;
+                text-decoration: none;
+                color: $blackColor;
+                font-family: var(--font-montserrat);
+                color: $whiteColor;
+                svg {
+                    display: flex;
+                    width: 30px;
+                }
+            }
+        }
+    }
+}

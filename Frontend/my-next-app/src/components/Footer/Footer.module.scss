@@ -1,0 +1,17 @@
+@import "variables";
+
+.footer {
+    position: sticky;
+    background-color: $blackColor;
+    height: 200px;
+    .textFooter {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: var(--font-roboto);
+        color: $whiteColor;
+        text-align: center;
+
+    }
+}
