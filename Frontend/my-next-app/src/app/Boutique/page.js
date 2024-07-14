@@ -8,8 +8,8 @@ const page = () => {
             <div className={styles.boutique}>
                 <h1>Boutique</h1>
                 <section className={styles.articles}>
-                    <div className={styles.artcile}>
-                        <Image src={"/assets/images/articles/atelier_1.5.jpg"} width={100} height={100} />
+                    <div className={styles.article}>
+                        <Image src={"/assets/images/articles/atelier_1.5.jpg"} className={styles.articleImg} width={100} height={100} />
                     </div>
                 </section>
             </div>

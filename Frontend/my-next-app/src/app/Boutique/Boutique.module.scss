@@ -13,7 +13,6 @@
     background-position: center; 
     .boutique {
         display: flex;
-        justify-content: center;
         width: 70%;
         height: 90%;
         background-color: $whiteColor;
@@ -25,12 +24,22 @@
             font-family: var(--font-montserrat);
             display: flex;
             justify-content: center;
-            align-items: flex-start;
         }
-        .aricles {
+        .articles {
             display: flex;
-            justify-content: center;
-            align-items: center;
+            flex-direction: row;
+            .article {
+                display: flex;
+                width: 200px;
+                height: 200px;
+                background-color: grey;
+                border-radius: 10px;
+                .articleImg {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
         }
     }
 }
