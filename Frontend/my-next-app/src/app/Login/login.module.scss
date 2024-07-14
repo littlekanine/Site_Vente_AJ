@@ -11,10 +11,11 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 500px;
-        height: 500px;
-        background-color: rgb(220, 220, 220);
+        width: 400px;
+        height: 400px;
+        // background-color: rgb(220, 220, 220);
         border-radius: 10px;
+        border: 3px solid $blackColor;
         margin: auto;
         .formulaire {
             font-family: var(--font-roboto);
@@ -29,12 +30,16 @@
                 justify-content: center;
                 align-items: center;
                 flex-direction: column;
-                gap: 20px;
+                gap: 10px;
                 input {
                     width: 300px;
                     height: 40px;
                     border: 0;
-                    border-radius: 10px;
+                    // border-radius: 10px;
+                    border-bottom: 2px solid $blackColor;
+                    &:focus {
+                        outline: none;
+                    }
                 }
             }
         }

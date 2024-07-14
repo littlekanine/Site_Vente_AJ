@@ -1,19 +1,19 @@
 import styles from "./login.module.scss";
+import Buttons from "@/components/button/buttons";
 
 const page = () => {
     return (
         <div className={styles.login}>
             <div className={styles.modale}>
-                <div className={styles.formulaire}>
+                <form className={styles.formulaire}>
                     <div className={styles.input}>
-                        <h2>Nom d'utilisateur</h2>
-                        <input></input>
+                        <input placeholder="Nom d'utilisateur"></input>
                     </div>
                     <div className={styles.input}>
-                        <h2>Mot de passe</h2>
-                        <input></input>
+                        <input placeholder="Mot de passe" type="password"></input>
                     </div>
-                </div>
+                    <Buttons message={"Login"} />
+                </form>
             </div>
         </div>
     );
