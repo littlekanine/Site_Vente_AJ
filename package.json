@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "@fortawesome/free-brands-svg-icons": "^6.5.2"
+    "@fortawesome/free-brands-svg-icons": "^6.5.2",
+    "mongoose": "^8.5.1"
   }
 }
