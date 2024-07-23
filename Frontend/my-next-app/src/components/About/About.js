@@ -39,21 +39,9 @@ const About = () => {
             <section className={styles.about}>
                 <div className={styles.block}>
                     <div className={styles.left}>
-                        <h2>L'Atelier de la luciole qu'est ce que c'est ? </h2>
-                        <p>
-                            Pandente itaque viam fatorum sorte tristissima, qua praestitutum erat eum vita et imperio spoliari, itineribus interiectis permutatione iumentorum emensis venit Petobionem oppidum Noricorum, ubi reseratae sunt insidiarum latebrae omnes, et Barbatio repente apparuit comes,
-                            qui sub eo domesticis praefuit, cum Apodemio agente in rebus milites ducens, quos beneficiis suis oppigneratos elegerat imperator certus nec praemiis nec miseratione ulla posse deflecti. Et quoniam apud eos ut in capite mundi morborum acerbitates celsius dominantur, ad
-                            quos vel sedandos omnis professio medendi torpescit, excogitatum est adminiculum sospitale nequi amicum perferentem similia videat, additumque est cautionibus paucis remedium aliud satis validum, ut famulos percontatum missos quem ad modum valeant noti hac aegritudine
-                            colligati, non ante recipiant domum quam lavacro purgaverint corpus. ita etiam alienis oculis visa metuitur labes. Tantum autem cuique tribuendum, primum quantum ipse efficere possis, deinde etiam quantum ille quem diligas atque adiuves, sustinere. Non enim neque tu
-                            possis, quamvis excellas, omnes tuos ad honores amplissimos perducere, ut Scipio P. Rupilium potuit consulem efficere, fratrem eius L. non potuit. Quod si etiam possis quidvis deferre ad alterum, videndum est tamen, quid ille possit sustinere.
-                        </p>
-                        <p>
-                            Pandente itaque viam fatorum sorte tristissima, qua praestitutum erat eum vita et imperio spoliari, itineribus interiectis permutatione iumentorum emensis venit Petobionem oppidum Noricorum, ubi reseratae sunt insidiarum latebrae omnes, et Barbatio repente apparuit comes,
-                            qui sub eo domesticis praefuit, cum Apodemio agente in rebus milites ducens, quos beneficiis suis oppigneratos elegerat imperator certus nec praemiis nec miseratione ulla posse deflecti. Et quoniam apud eos ut in capite mundi morborum acerbitates celsius dominantur, ad
-                            quos vel sedandos omnis professio medendi torpescit, excogitatum est adminiculum sospitale nequi amicum perferentem similia videat, additumque est cautionibus paucis remedium aliud satis validum, ut famulos percontatum missos quem ad modum valeant noti hac aegritudine
-                            colligati, non ante recipiant domum quam lavacro purgaverint corpus. ita etiam alienis oculis visa metuitur labes. Tantum autem cuique tribuendum, primum quantum ipse efficere possis, deinde etiam quantum ille quem diligas atque adiuves, sustinere. Non enim neque tu
-                            possis, quamvis excellas, omnes tuos ad honores amplissimos perducere, ut Scipio P. Rupilium potuit consulem efficere, fratrem eius L. non potuit. Quod si etiam possis quidvis deferre ad alterum, videndum est tamen, quid ille possit sustinere.
-                        </p>
+                        <div className={styles.aboutTitle}>
+                            <h2>L'Atelier de la luciole qu'est ce que c'est ? </h2>
+                        </div>
                         <p>
                             Pandente itaque viam fatorum sorte tristissima, qua praestitutum erat eum vita et imperio spoliari, itineribus interiectis permutatione iumentorum emensis venit Petobionem oppidum Noricorum, ubi reseratae sunt insidiarum latebrae omnes, et Barbatio repente apparuit comes,
                             qui sub eo domesticis praefuit, cum Apodemio agente in rebus milites ducens, quos beneficiis suis oppigneratos elegerat imperator certus nec praemiis nec miseratione ulla posse deflecti. Et quoniam apud eos ut in capite mundi morborum acerbitates celsius dominantur, ad
@@ -90,6 +78,19 @@ const About = () => {
                 <Link href="https://www.instagram.com/latelierauch/" target="_blank" alt="Lien vers la page instagram de L'atelier à Auch">
                     <FontAwesomeIcon icon={faInstagram} className={styles.insta} />
                 </Link>
+            </section>
+            <section>
+                <div className={styles.formulaire}>
+                <form className={styles.formulaire}>
+                    <div className={styles.input}>
+                        <input placeholder="Nom d'utilisateur"></input>
+                    </div>
+                    <div className={styles.input}>
+                        <input placeholder="Mot de passe" type="password"></input>
+                    </div>
+                    {/* <Buttons message={"Login"} /> */}
+                </form>
+                </div>
             </section>
         </div>
     );

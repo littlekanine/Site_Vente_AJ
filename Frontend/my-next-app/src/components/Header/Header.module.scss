@@ -60,6 +60,14 @@
                     width: 30px;
                 }
             }
+            .localisation {
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+                .ping {
+                    width: 16px;;
+                }
+            }
         }
     }
 }
